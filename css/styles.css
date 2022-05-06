@@ -192,7 +192,10 @@ body {
 
 }
 
-
+ :focus {
+  outline: 0;
+  outline-offset: 0;
+}
 
 .form-field input {
   padding: 12px 42px;
@@ -206,7 +209,7 @@ body {
 }
 
 .form-field input:focus {
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .form-field textarea {
@@ -220,7 +223,7 @@ body {
 }
 
 .form-field textarea:focus {
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .form-field ::placeholder {
@@ -375,6 +378,14 @@ textarea {
   width: 358px;
   height: 50px;
   background-color: var(--primary-background-color);
+
+  transition-property: border;
+  transition-duration: var(--transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-input:focus{
+  border: 1px solid var(--accent-color);
 }
 
 .subscription-input::placeholder {
@@ -385,6 +396,7 @@ textarea {
   color: var(--foorer-text-color);
 
 }
+
 
 .button-submit {
   display: flex;
