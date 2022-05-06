@@ -265,7 +265,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.checkbox-conditions{
+.checkbox-conditions {
   position: relative;
   display: flex;
   align-items: center;
@@ -305,10 +305,10 @@ textarea {
 .tex-conditions::before {
   position: absolute;
   top: 50%;
-  left:0;
+  left: 0;
   transform: translateY(-60%);
-  
-  
+
+
   content: "";
   display: inline-block;
   width: 15px;
@@ -390,7 +390,7 @@ textarea {
   display: flex;
   position: absolute;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   right: 0;
   bottom: 0;
 }
