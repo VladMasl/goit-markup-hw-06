@@ -116,7 +116,16 @@ body {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-white-color);
+
+  transform: translate(-50%, -50%);
+  transition: transform var(--transition) linear;
 }
+
+
+
+.backdrop.is-hidden .modal {
+transform: translate(-50%, -50%) scale(0) rotate(90deg);}
+
 
 
 .butt {
